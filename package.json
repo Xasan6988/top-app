@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "debug": "cross-env NODE_OPTIONS='--inspect' npx next dev",
     "build": "next build",
     "start": "next start",
     "stylelint": "stylelint \"**/*.css\" --fix"
@@ -12,7 +13,8 @@
     "@types/node": "20.3.3",
     "@types/react": "18.2.14",
     "@types/react-dom": "18.2.6",
-    "eslint-config-next": "13.4.7",
+    "cross-env": "^7.0.3",
+    "eslint-config-next": "^12.0.4",
     "next": "13.4.7",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -23,7 +25,7 @@
     "@typescript-eslint/parser": "^5.61.0",
     "eslint": "^8.44.0",
     "stylelint": "^15.9.0",
-    "stylelint-config-standard": "^33.0.0",
+    "stylelint-config-standard": "^16.0.0",
     "stylelint-order": "^6.0.3",
     "stylelint-order-config-standard": "^0.1.3"
   }

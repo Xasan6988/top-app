@@ -1,3 +1,5 @@
+import React from 'react';
+
 const Home = (): JSX.Element => {
   return (
     <main >
@@ -6,5 +8,5 @@ const Home = (): JSX.Element => {
       </div>
     </main>
   );
-}
+};
 export default Home;
