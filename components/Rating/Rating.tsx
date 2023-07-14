@@ -16,7 +16,6 @@ export const Rating = ({ isEditable = false, rating, setRating, ...props }: Rati
     const updateArray = ratingArray.map((r: JSX.Element, i: number) => {
       return (
         <span
-          key={i}
           className={cn(styles.star, {
             [styles.filled]: i < currentRating,
             [styles.editable]: isEditable
@@ -60,7 +59,7 @@ export const Rating = ({ isEditable = false, rating, setRating, ...props }: Rati
 
   return (
     <div {...props}>
-      {ratingArray.map((r, i) => r)}
+      {ratingArray.map((r, i) => <span key={i}>{r}</span>)}
     </div>
   );
 };
