@@ -14,11 +14,15 @@
 			{
 				"allowSingleExtends": true
 			}
+		],
+		"@typescript-eslint/no-empty-function": [
+			"warn"
 		]
 	},
 	"extends": [
 		"eslint:recommended",
 		"plugin:@typescript-eslint/eslint-recommended",
-		"plugin:@typescript-eslint/recommended"
+		"plugin:@typescript-eslint/recommended",
+		"plugin:react-hooks/recommended"
 	]
 }
