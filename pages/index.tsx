@@ -22,9 +22,6 @@ const Home: React.FC<HomeProps> = ({menu}: HomeProps): JSX.Element => {
       <Tag size='s' color="green">Some tag</Tag>
       <Tag size='m' color="primary">Some tag</Tag>
       <Rating rating={rating} isEditable setRating={setRating}/>
-      <ul>
-        {menu.map(e => (<li key={e._id.secondCategory}>{e._id.secondCategory}</li>))}
-      </ul>
     </>
   );
 };
