@@ -3,9 +3,9 @@ import cn from 'classnames';
 import { AppContext } from '@/context/app.context';
 import { FirstLevelMenuItem, PageItem } from '@/interfaces/menu.interface';
 import CoursesIcon from './Courses.svg';
-import ServicesIcon from './Courses.svg';
-import BooksIcon from './Courses.svg';
-import ProductsIcon from './Courses.svg';
+import ServicesIcon from './Services.svg';
+import BooksIcon from './Books.svg';
+import ProductsIcon from './Products.svg';
 import { TopLevelCategory } from '@/interfaces/page.interface';
 import styles from './Menu.module.css';
 
@@ -41,7 +41,7 @@ export const Menu = (): JSX.Element => {
   };
   const buildSecondLevel = (menuItem: FirstLevelMenuItem) => {
     return (
-      <div>
+      <div className={styles.secondBlock}>
         {menu.map(m => (
           <div key={m._id.secondCategory}>
             <div className={styles.secondLevel}>{m._id.secondCategory}</div>
@@ -62,7 +62,7 @@ export const Menu = (): JSX.Element => {
           key={page.alias}
           href={`/${route}/${page.alias}`}
           className={cn(styles.thirdLevel, {
-            [styles.thirdLevelActive]: true
+            [styles.thirdLevelActive]: false
           })}
         >
           {page.category}
