@@ -39,7 +39,7 @@ export const getStaticProps: GetStaticProps<HomeProps> = async () => {
 
   return {
     props: {
-      menu,
+      menu: [...menu],
       firstCategory
     }
   };
